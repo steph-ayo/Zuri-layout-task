@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Stylig of header */
+header{
+    width: 20%;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+#header-btn {
+    width: max-content;
+    background-color: white;
+    border-radius: 0 30px 30px 0;
+    padding: 10px;
+}
+#header-btn a {
+    width: max-content;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 0 30px 30px 0;
+}
+#header-btn:hover{
+    background-color: black;
+    border: 2px solid white;
+}
+#header-btn a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* Styling of main */
+main {
+    width: 70%;
+    height: 80vh;
+    margin : auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+main div {
+    width: 34%;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    margin-top: 8vh;
+}
+/* Styling of text container */
+.text-container{
+    width: 100%;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 2px;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    color: hsl(0, 0%, 95%)
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family:'Lexend Deca', sans-serif;
+    line-height: 25px;
+    margin-bottom: 13vh;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+/* Styling of container button */
+#container-btn {
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: max-content;
+    padding: 15px 35px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.section1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.section2{
+    background-color: hsl(184, 100%, 22%);
+}
+.section3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.section1 .container #container-btn{
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+}
+.section2 .container #container-btn {
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+}
+.section3 .container #container-btn {
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.section1 .container #container-btn:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.section2 .container #container-btn:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.section3 .container #container-btn:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+/* MEDIA QUERY for 768px*/ 
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        height: 256vh;
+        margin-bottom: 5vh;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+    .section1, .section2, .section3 {
+        width: 100%;
+    }
+    .container {
+        margin-bottom: 8vh;
+    }
+    .section1{
+        border-radius: 10px 10px 0 0;
+    }
+    .section3{
+        border-radius: 0 0 10px 10px;
+    }
+}
+/* MEDIA QUERY for 375px*/ 
+@media screen and (max-width: 375px) {
+    main {
+        width: 90%;
+        height: 237vh;
+        margin-bottom: 3vh;
+        flex-direction: column;
+        border: 1px solid white;
+    }
+    .section1, .section2, .section3 {
+        width: 100%;
+    }
+    .container {
+        margin-bottom: 8vh;
+    }
+    .section1{
+        border-radius: 10px 10px 0 0;
+    }
+    .section3{
+        border-radius: 0 0 10px 10px;
+    }
+}
